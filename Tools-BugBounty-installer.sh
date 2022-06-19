@@ -1,6 +1,6 @@
 #!/bin/bash -i
-# Author: drak3hft7
-# Date: 08/09/2021
+# Author: Taki
+# Date: 16/05/2022
 
 # Check if the script is executed with root privileges
 if [ "${UID}" -eq 0 ]
