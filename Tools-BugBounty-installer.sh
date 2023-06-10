@@ -61,7 +61,7 @@ echo -e "\e[32mDone! Masscan installed."; echo "";
 sleep 1.5
 #Naabu
 echo -e "\e[93m\e[1m----> Installing Naabu";
-go get -v github.com/projectdiscovery/naabu/v2/cmd/naabu > /dev/null 2>&1 && ln -s ~/go/bin/naabu /usr/local/bin/;
+go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest > /dev/null 2>&1 && ln -s ~/go/bin/naabu /usr/local/bin/;
 echo -e "\e[32mDone! Naabu installed."; echo "";
 sleep 1.5
 
@@ -79,7 +79,7 @@ echo -e "\e[32mDone! Massdns installed."; echo "";
 sleep 1.5
 #Subfinder
 echo -e "\e[93m\e[1m----> Installing Subfinder";
-go get -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder > /dev/null 2>&1 && ln -s ~/go/bin/subfinder /usr/local/bin/;
+go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest > /dev/null 2>&1 && ln -s ~/go/bin/subfinder /usr/local/bin/;
 echo -e "\e[32mDone! Subfinder installed."; echo "";
 sleep 1.5
 #Knock
@@ -89,7 +89,7 @@ echo -e "\e[32mDone! Knock installed."; echo "";
 sleep 1.5
 #Github-subdomains
 echo -e "\e[93m\e[1m----> Installing Github-subdomains";
-go get -u github.com/gwen001/github-subdomains > /dev/null 2>&1 && ln -s ~/go/bin/github-subdomains /usr/local/bin/;
+go install github.com/gwen001/github-subdomains@latest > /dev/null 2>&1 && ln -s ~/go/bin/github-subdomains /usr/local/bin/;
 echo -e "\e[32mDone! Github-subdomains installed."; echo "";
 sleep 1.5
 #Sublist3r
@@ -107,12 +107,12 @@ echo -e "\e[32mDone! Crtndstry installed."; echo "";
 sleep 1.5
 #Assetfinder
 echo -e "\e[93m\e[1m----> Installing Assentfinder";
-go get -u github.com/tomnomnom/assetfinder > /dev/null 2>&1 && ln -s ~/go/bin/assetfinder /usr/local/bin/;
+go install github.com/tomnomnom/assetfinder@latest > /dev/null 2>&1 && ln -s ~/go/bin/assetfinder /usr/local/bin/;
 echo -e "\e[32mDone! Assetfinder installed."; echo "";
 sleep 1.5
 #dnsx
 echo -e "\e[93m\e[1m----> Installing Dnsx";
-go get -v github.com/projectdiscovery/dnsx/cmd/dnsx > /dev/null 2>&1 && ln -s ~/go/bin/dnsx /usr/bin/;
+go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest > /dev/null 2>&1 && ln -s ~/go/bin/dnsx /usr/bin/;
 echo -e "\e[32mDone! Dnsx installed."; echo "";
 sleep 1.5
 #dnsgen
@@ -124,7 +124,7 @@ sleep 1.5
 #---------Install subdomain takeovers
 #SubOver
 echo -e "\e[93m\e[1m----> Installing SubOver";
-go get -v github.com/Ice3man543/SubOver > /dev/null 2>&1 && ln -s ~/go/bin/subover /usr/bin/;
+go install -v github.com/Ice3man543/SubOver@latest > /dev/null 2>&1 && ln -s ~/go/bin/subover /usr/bin/;
 echo -e "\e[32mDone! SubOver installed."; echo "";
 sleep 1.5
 
@@ -139,7 +139,7 @@ echo -e "\e[32mDone! Dirsearch installed.";
 sleep 1.5
 #ffuf
 echo -e "\e[93m\e[1m----> Installing ffuf";
-go get -u github.com/ffuf/ffuf > /dev/null 2>&1 && ln -s ~/go/bin/ffuf /usr/local/bin/;
+go install github.com/ffuf/ffuf@latest > /dev/null 2>&1 && ln -s ~/go/bin/ffuf /usr/local/bin/;
 echo -e "\e[32mDone! Ffuf installed.";
 sleep 1.5
 
