@@ -33,7 +33,7 @@ sleep 1.5
 
 #---------Install Golang
 echo -e "\e[93m\e[1m----> Golang environment installation in progress ...";
-cd /tmp && curl -O https://dl.google.com/go/go1.18.3.linux-amd64.tar.gz > /dev/null 2>&1 && tar xvf go1.17.linux-amd64.tar.gz > /dev/null 2>&1;
+cd /tmp && curl -O https://dl.google.com/go/go1.20.5.linux-amd64.tar.gz > /dev/null 2>&1 && tar xvf go1.17.linux-amd64.tar.gz > /dev/null 2>&1;
 mv go /usr/local
 export GOROOT=/usr/local/go && export GOPATH=$HOME/go && export PATH=$GOPATH/bin:$GOROOT/bin:$PATH;
 echo 'export GOROOT=/usr/local/go' >> ~/.bash_profile && echo 'export GOPATH=$HOME/go'	>> ~/.bash_profile	&& echo 'export PATH=$GOPATH/bin:$GOROOT/bin:$PATH' >> ~/.bash_profile;
@@ -183,7 +183,7 @@ echo -e "\e[32mDone! NoSqlmap installed."; echo "";
 sleep 1.5
 #Jeeves
 echo -e "\e[93m\e[1m----> Installing Jeeves";
-go get -u github.com/ferreiraklet/Jeeves > /dev/null 2>&1 && ln -s ~/go/bin/jeeves /usr/local/bin/;
+go install github.com/ferreiraklet/Jeeves@latest > /dev/null 2>&1 && ln -s ~/go/bin/jeeves /usr/local/bin/;
 cd ~/tools/
 echo -e "\e[32mDone! Jeeves installed."; echo "";
 sleep 1.5
@@ -227,13 +227,13 @@ sleep 1.5
 #---------Crawling Web
 #Gospider
 echo -e "\e[93m\e[1m----> Installing Gospider";
-go get -u github.com/jaeles-project/gospider > /dev/null 2>&1 && ln -s ~/go/bin/gospider /usr/local/bin/;
+go install github.com/jaeles-project/gospider@latest > /dev/null 2>&1 && ln -s ~/go/bin/gospider /usr/local/bin/;
 cd ~/tools/
 echo -e "\e[32mDone! Gospider installed."; echo "";
 sleep 1.5
 #Hakrawler
 echo -e "\e[93m\e[1m----> Installing Hakrawler";
-go get -u github.com/hakluke/hakrawler > /dev/null 2>&1 && ln -s ~/go/bin/hakrawler /usr/local/bin/;
+go install github.com/hakluke/hakrawler@latest > /dev/null 2>&1 && ln -s ~/go/bin/hakrawler /usr/local/bin/;
 cd ~/tools/
 echo -e "\e[32mDone! Hakrawler installed."; echo "";
 sleep 1.5
@@ -253,7 +253,7 @@ echo -e "\e[32mDone! XSS-Loader installed."; echo "";
 sleep 1.5
 #Freq
 echo -e "\e[93m\e[1m----> Installing Freq";
-go get -v github.com/takshal/freq > /dev/null 2>&1 && ln -s ~/go/bin/freq /usr/local/bin/;
+go install -v github.com/takshal/freq@latest > /dev/null 2>&1 && ln -s ~/go/bin/freq /usr/local/bin/;
 cd ~/tools/
 echo -e "\e[32mDone! Freq installed."; echo "";
 sleep 1.5
@@ -275,7 +275,7 @@ sleep 1.5
 #---------Vuln Scan
 #Nuclei
 echo -e "\e[93m\e[1m----> Installing Nuclei";
-go get -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei > /dev/null 2>&1 && ln -s ~/go/bin/nuclei /usr/local/bin/;
+go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest > /dev/null 2>&1 && ln -s ~/go/bin/nuclei /usr/local/bin/;
 cd ~/tools/
 echo -e "\e[32mDone! Nuclei installed."; echo "";
 sleep 1.5
@@ -291,34 +291,34 @@ sleep 1.5
 #---------Useful Tools
 #anew
 echo -e "\e[93m\e[1m----> Installing Anew";
-go get -u github.com/tomnomnom/anew > /dev/null 2>&1 && ln -s ~/go/bin/anew /usr/local/bin/;
+go install -v github.com/tomnomnom/anew@latest > /dev/null 2>&1 && ln -s ~/go/bin/anew /usr/local/bin/;
 echo -e "\e[32mDone! Dnsgen installed."; echo "";
 sleep 1.5
 #unew
 echo -e "\e[93m\e[1m----> Installing Unew";
-go get -u github.com/dwisiswant0/unew > /dev/null 2>&1 && ln -s ~/go/bin/unew /usr/local/bin/;
+go install github.com/dwisiswant0/unew@latest > /dev/null 2>&1 && ln -s ~/go/bin/unew /usr/local/bin/;
 echo -e "\e[32mDone! Dnsgen installed."; echo "";
 sleep 1.5
 #gf
 echo -e "\e[93m\e[1m----> Installing gf";
-go get -u github.com/tomnomnom/gf > /dev/null 2>&1 && ln -s ~/go/bin/gf /usr/local/bin/;
+go install github.com/tomnomnom/gf@latest > /dev/null 2>&1 && ln -s ~/go/bin/gf /usr/local/bin/;
 echo -e "\e[32mDone! Gf installed."; echo "";
 sleep 1.5
 #Http Probe
 echo -e "\e[93m\e[1m----> Installing httprobe";
-go get github.com/tomnomnom/httprobe > /dev/null 2>&1 && ln -s ~/go/bin/httprobe /usr/local/bin/;
+go install github.com/tomnomnom/httprobe@latest > /dev/null 2>&1 && ln -s ~/go/bin/httprobe /usr/local/bin/;
 cd ~/tools/
 echo -e "\e[32mDone! Httprobe installed."; echo "";
 sleep 1.5
 #httpx
 echo -e "\e[93m\e[1m----> Installing httpx";
-go get -v github.com/projectdiscovery/httpx/cmd/httpx > /dev/null 2>&1 && ln -s ~/go/bin/httpx /usr/local/bin/;
+go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest > /dev/null 2>&1 && ln -s ~/go/bin/httpx /usr/local/bin/;
 cd ~/tools/
 echo -e "\e[32mDone! Httpx installed."; echo "";
 sleep 1.5
 #waybackurls
 echo -e "\e[93m\e[1m----> Installing waybackurls";
-go get github.com/tomnomnom/waybackurls > /dev/null 2>&1 && ln -s ~/go/bin/waybackurls /usr/local/bin/;
+go install github.com/tomnomnom/waybackurls@latest > /dev/null 2>&1 && ln -s ~/go/bin/waybackurls /usr/local/bin/;
 cd ~/tools/
 echo -e "\e[32mDone! Waybackurls installed."; echo "";
 sleep 1.5
@@ -341,7 +341,7 @@ echo -e "\e[32mDone! Uro installed."; echo "";
 sleep 1.5
 #QSreplace
 echo -e "\e[93m\e[1m----> Installing qsreplace";
-go get -v github.com/tomnomnom/qsreplace > /dev/null 2>&1 && ln -s ~/go/bin/qsreplace /usr/local/bin/;
+go install -v github.com/tomnomnom/qsreplace@latest > /dev/null 2>&1 && ln -s ~/go/bin/qsreplace /usr/local/bin/;
 cd ~/tools/
 echo -e "\e[32mDone! Qsreplace installed."; echo "";
 sleep 1.5
